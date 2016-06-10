@@ -183,15 +183,10 @@
                     $bodyRows.to$().removeClass(options.duplicateItemClass);
 
                     // ignore those marked as deleted
-                    $bodyRows = $bodyRows.each(function (index, item) {
-                        if (!$(item).hasClass(options.deletedClass)) {
-                            return item;
+                    $bodyRows.each(function (item,index) {  //No idea why item & index are reversed, but debug and it works this way. Strange.
+                        if (!$(item).parent('tr').hasClass(options.deletedClass)) {
+                            names.push($(item).text());
                         }
-                    });
-
-                    // Build a sorted list of names
-                    $.each($tbl.DataTable().column(0).nodes(), function (index, item) {
-                        names.push($(item).text());
                     });
                     names = names.sort();
 

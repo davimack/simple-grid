@@ -730,9 +730,10 @@
                 "stateSave": true,
                 orderClasses: false,
                 pagingType: "full_numbers",
-                buttons: [
-                    'colvis', 'copy', 'csv', 'excel', { extend: 'pdfHtml5', orientation: 'landscape' }
-                ],
+                //buttons: [
+                //    'colvis', 'copy', 'csv', 'excel', { extend: 'pdfHtml5', orientation: 'landscape' }
+                //],
+                buttons: [ 'colvis' ],
                 "columnDefs": [
                     {
                         "defaultContent": "<input type='checkbox' class='checkbox chk-md disableRow' checked>",

@@ -737,7 +737,7 @@
                 orderClasses: false,
                 pagingType: "full_numbers",
                 buttons: [
-                    'colvis', 'copy', 'csv', 'excel', { extend: 'pdfHtml5', orientation: 'landscape' }
+                    'colvis', 'copy', 'csv', 'excel'
                 ],
                 "columnDefs": [
                     {
